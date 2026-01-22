@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | BuildRent</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">🚧 BuildRent</a>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="listings.html">Rentals</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="feedback.html">Feedback</a>
+                    <a href="login.html" class="active">Login</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="home-section" style="max-width: 400px; margin: 60px auto;">
+            <div class="card" style="padding: 40px;">
+                <h1 style="text-align: center; margin-bottom: 30px;">Login</h1>
+                <form id="login-form">
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 5px; font-weight: bold;">Username</label>
+                        <input type="text" id="username" class="simple-input"
+                            style="width: 100%; box-sizing: border-box;" placeholder="Enter username" required>
+                    </div>
+                    <div style="margin-bottom: 30px;">
+                        <label style="display: block; margin-bottom: 5px; font-weight: bold;">Password</label>
+                        <input type="password" id="password" class="simple-input"
+                            style="width: 100%; box-sizing: border-box;" placeholder="Enter password" required>
+                    </div>
+                    <button class="btn" style="width: 100%;">Sign In</button>
+                    <p style="text-align: center; margin-top: 15px; color: #666; font-size: 0.9rem;"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 BuildRent Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

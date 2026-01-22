@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | BuildRent</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">🚧 BuildRent</a>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="listings.html">Rentals</a>
+                    <a href="contact.html" class="active">Contact</a>
+                    <a href="feedback.html">Feedback</a>
+                    <a href="login.html">Login</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="home-section" style="max-width: 800px; margin: 40px auto;">
+            <div class="card" style="padding: 40px;">
+                <h1 style="text-align: center; margin-bottom: 30px;">Get in Touch</h1>
+
+                <div class="grid-layout"
+                    style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 40px;">
+                    <div>
+                        <h3>Contact Information</h3>
+                        <p style="margin-bottom: 15px;">Have questions? We are here to help you 24/7.</p>
+
+                        <p><strong>📍 Address:</strong><br>
+                            #52 Construction Avenue,<br>
+                            Industrial Zone, banglore, 560085</p>
+                        <br>
+                        <p><strong>📞 Phone:</strong><br>
+                            +91 9364047748/p>
+                        <br>
+                        <p><strong>📧 Email:</strong><br>
+                            pranavnm2006@gmail.com</p>
+                    </div>
+
+                    <div>
+                        <h3>Send us a Message</h3>
+                        <form id="contact-form">
+                            <input type="text" id="contact-name" placeholder="Your Name" required class="simple-input">
+                            <input type="tel" id="contact-phone" placeholder="Your Phone (10 digits)" required
+                                class="simple-input">
+                            <input type="email" id="contact-email" placeholder="Your Email" required
+                                class="simple-input">
+                            <textarea id="contact-message" placeholder="How can we help?" rows="5" required
+                                class="simple-input"></textarea>
+                            <button class="btn" style="width: 100%;">Send Message</button>
+                            <div id="contact-message-box"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 BuildRent Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

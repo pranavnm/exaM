@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Details | BuildRent</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">🚧 BuildRent</a>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="listings.html" class="active">Rentals</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="feedback.html">Feedback</a>
+                    <a href="login.html">Login</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- SECTION: ITEM DETAILS & BOOKING -->
+        <section id="details-page">
+            <a href="listings.html" class="btn-outline"
+                style="padding: 5px 10px; margin-bottom: 20px; display:inline-block;">← Back to Listings</a>
+
+            <div id="details-content" class="details-layout">
+                <!-- 1. Item Information Section -->
+                <div class="card">
+                    <!-- Image will be set by JS -->
+                    <img id="detail-image" src="" alt="Item Image" style="width:100%; display:none;">
+                    <div class="card-content">
+                        <h2 id="detail-title">Loading...</h2>
+                        <p id="detail-desc"></p>
+                        <p><strong>Base Price:</strong> <span id="detail-base-price">...</span> / day</p>
+                    </div>
+                </div>
+
+                <!-- 2. Booking Form Section -->
+                <div class="booking-form" id="booking-section">
+                    <h3>Book Now</h3>
+                    <form id="booking-form">
+                        <input type="text" placeholder="Name" required class="simple-input"><br><br>
+                        <input type="tel" placeholder="Phone (10 digits)" required class="simple-input"><br><br>
+
+                        <label>Days:
+                            <input type="number" id="days" value="1" min="1" style="width:50px">
+                        </label><br><br>
+
+                        <p><strong>Add-ons:</strong></p>
+                        <label>
+                            <input type="checkbox" id="opt-operator"> Operator (+₹5000/day)
+                        </label><br>
+                        <label>
+                            <input type="checkbox" id="opt-waiver"> Damage Waiver (+₹2000 flat)
+                        </label><br>
+                        <label>
+                            <input type="checkbox" id="opt-discount"> Apply 5% Discount
+                        </label><br><br>
+
+                        <p>Total: <strong id="total">...</strong></p>
+                        <button class="btn">Confirm Booking</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 BuildRent Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

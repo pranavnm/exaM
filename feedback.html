@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | BuildRent</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">🚧 BuildRent</a>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="listings.html">Rentals</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="feedback.html" class="active">Feedback</a>
+                    <a href="login.html">Login</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- SECTION: FEEDBACK -->
+        <section id="feedback-page">
+            <div class="feedback-container">
+                <h1>Customer Feedback</h1>
+                <p>Tell us about your experience renting with us.</p>
+
+                <!-- Internal CSS for Feedback Form -->
+                <style>
+                    .feedback-input {
+                        width: 100%;
+                        padding: 10px;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                        transition: all 0.3s ease;
+                    }
+
+                    /* Hover Effect */
+                    .feedback-input:hover {
+                        background-color: #f0f8ff;
+                        /* Light AliceBlue */
+                        border-color: #0056b3;
+                    }
+
+                    /* Focus Effect */
+                    .feedback-input:focus {
+                        background-color: #fff;
+                        border-color: #ff9800;
+                        /* Primary color */
+                        outline: none;
+                    }
+
+                    .form-group-styled {
+                        width: 100%;
+                        margin-bottom: 1rem;
+                    }
+                </style>
+
+                <!-- Feedback Form -->
+                <form id="feedback-form" class="booking-form">
+                    <div class="form-group-styled">
+                        <label for="fb-name">Name *</label>
+                        <input type="text" id="fb-name" required class="feedback-input">
+                    </div>
+                    <div class="form-group-styled">
+                        <label for="fb-email">Email *</label>
+                        <input type="email" id="fb-email" required class="feedback-input">
+                    </div>
+                    <div class="form-group-styled">
+                        <label for="fb-phone">Mobile Number *</label>
+                        <input type="tel" id="fb-phone" required placeholder="10 digits" class="feedback-input">
+                    </div>
+                    <div class="form-group-styled">
+                        <label>Rating *</label>
+                        <select id="fb-rating" required class="feedback-input">
+                            <option value="5">5 - Excellent</option>
+                            <option value="4">4 - Very Good</option>
+                            <option value="3">3 - Good</option>
+                            <option value="2">2 - Fair</option>
+                            <option value="1">1 - Poor</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group-styled">
+                        <label for="fb-comment">Comments</label>
+                        <textarea id="fb-comment" rows="4" class="feedback-input"></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Submit Feedback</button>
+                    <div id="fb-message"></div>
+                </form>
+
+                <hr style="margin: 2rem 0; border: 0; border-top: 1px solid #ddd;">
+
+                <h3>Recent Reviews</h3>
+                <div id="reviews-list">
+                    <!-- Reviews loaded from LocalStorage -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 BuildRent Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
